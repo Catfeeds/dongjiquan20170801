@@ -280,6 +280,7 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
     /**
      * 跑步记录
      */
+
     private void startRecord() {
         startActivity(new Intent(context, MyHistoryActivity.class));
     }
