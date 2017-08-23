@@ -7,12 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-
 import com.weiaibenpao.demo.chislim.R;
 import com.weiaibenpao.demo.chislim.bean.UserBean;
+import com.weiaibenpao.demo.chislim.hurui.activity.UserDetailActivity;
 import com.weiaibenpao.demo.chislim.hurui.bean.FunsBean;
 import com.weiaibenpao.demo.chislim.hurui.bean.HumorBean;
 import com.weiaibenpao.demo.chislim.hurui.httpClient.ApiClient;
@@ -94,7 +95,17 @@ public class HumorMarkAdapter extends RecyclerView.Adapter<HumorMarkAdapter.Humo
                 });
             }
         });
-    }
+
+        holder.hot_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                UserDetailActivity.openActivity(mContext,humor_markLists.get(position).getId());
+
+            }
+        });
+
+
+}
 
 
 
@@ -119,6 +130,10 @@ public class HumorMarkAdapter extends RecyclerView.Adapter<HumorMarkAdapter.Humo
 
         @BindView(R.id.guanzhu_tv)
         TextView guanzhu_tv ;
+
+        @BindView(R.id.hot_layout)
+        LinearLayout hot_layout;
+
 
         public HumorMarkHolder(View itemView) {
             super(itemView);

@@ -10,6 +10,7 @@
         android:layout_width="@dimen/x142"
         android:layout_height="@dimen/y105" />
     <LinearLayout
+        android:id="@+id/hot_layout"
         android:background="@drawable/image_top_radiu_item"
         android:gravity="center"
         android:orientation="vertical"

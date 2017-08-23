@@ -453,7 +453,7 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
      */
     public void intentFuns(int type){
         Intent intent = new Intent(context,Li_FunsActivity.class);
-        intent.putExtra(Li_FunsActivity.FANS,0);
+        intent.putExtra(Li_FunsActivity.FANS,type);
         startActivity(intent);
     }
 
