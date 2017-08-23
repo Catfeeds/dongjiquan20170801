@@ -1,0 +1,20 @@
+#ABNF 1.0 UTF-8;
+language zh-CN; 
+mode voice;
+
+root $main;
+$main = $place1 到 $place2 | $place13 $place3 | $place13 $place4 | $place13 $place5 | $place13 $place6 | $place13 $place7 | $place13 $place8 | $place13 $place9 | $place13 $place11 $place10 | $place13 $place12 $place10;
+$place1 = 北京|武汉|南京|天津|东京;
+$place2 = 上海|合肥;
+$place3 = 你好;
+$place4 = 前进|走起来|跑起来|开始|start;
+$place5 = 加速|加快速度|再快点|快|快快的;
+$place6 = 减速|减慢速度|再慢点|慢|慢慢的;
+$place7 = 停下|停下来|stop|停止|停;
+$place8 = 高一点|再高一点|抬高|增加坡度;
+$place9 = 低一点|在低一点|降低|降低坡度;
+$place10 = 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16;
+$place11 = 速度;
+$place12 = 坡度;
+
+$place13 = 迈迈;

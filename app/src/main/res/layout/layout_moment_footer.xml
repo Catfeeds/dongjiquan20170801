@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/layout_moment_view">
+
+    <LinearLayout
+        android:id="@+id/num_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/likeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/selector_like_btn"
+            android:drawablePadding="8dp"
+            android:lineSpacingExtra="4sp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:text="300" />
+
+        <TextView
+            android:id="@+id/commentNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/ic_comment"
+            android:drawablePadding="8dp"
+            android:lineSpacingExtra="4sp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:text="160" />
+    </LinearLayout>
+    <View
+        android:id="@+id/divider_footer"
+        style="@style/Line_Horizontal_Small"
+        android:layout_marginTop="20dp"
+        android:background="@color/divider_deep_gray" />
+
+</merge>

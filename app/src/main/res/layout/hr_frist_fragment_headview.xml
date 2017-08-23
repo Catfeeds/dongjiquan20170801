@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.youth.banner.Banner
+        app:indicator_width="6dp"
+        app:indicator_height="6dp"
+        app:indicator_drawable_selected="@drawable/indicator_selected"
+        app:indicator_drawable_unselected="@drawable/indicator_unselected"
+        android:id="@+id/banner_first"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150">
+    </com.youth.banner.Banner>
+    <LinearLayout
+        android:layout_marginTop="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/gotoRunmacheine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@mipmap/icon_run"
+                android:layout_width="49dp"
+                android:layout_height="49dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="11.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14.1sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="-1.5sp"
+                android:text="跑步机"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/gotoMusic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/icon_music"
+                android:layout_width="49dp"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="11.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14.1sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="-1.5sp"
+                android:text="音乐盒子" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/gotoTourism"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/icon_travel"
+                android:layout_width="49dp"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="11.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="旅游"
+                android:textColor="#fff"
+              />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:background="@color/ku_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y26"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@mipmap/line_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="热门活动"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:src="@mipmap/line_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

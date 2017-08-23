@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/x5"
+    android:layout_width="@dimen/x22"
+    android:layout_height="@dimen/x22">
+    <com.weiaibenpao.demo.chislim.map.customview.CircleImageView
+        android:id="@+id/par_icon_iv"
+        android:layout_width="@dimen/x22"
+        android:layout_height="@dimen/x22" />
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sport_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    tools:context="com.weiaibenpao.demo.chislim.ui.SportStyleActivity">
+
+    <RelativeLayout
+        android:id="@+id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backView">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#aaa"
+            android:text="路线选择"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/mySet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#aaa"
+            android:padding="15dp"
+            android:text="自定义"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mtLittleTitle"
+        android:layout_below="@+id/myTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#aaa"
+        android:padding="5dp"
+        android:text="上次自定义记录"/>
+    <RelativeLayout
+        android:id="@+id/myLayout"
+        android:layout_below="@+id/mtLittleTitle"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/myBackground"
+            android:layout_width="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:background="#333"
+            android:alpha="0.5"
+            android:layout_height="60dp" />
+        <LinearLayout
+            android:id="@+id/rember"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:id="@+id/startCity"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/backWord"
+                android:padding="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/hiddenlinenew"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/nowDis"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/backWord"
+                android:padding="15dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/hiddenlinenew"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/endCity"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/backWord"
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/quickGo"
+        android:layout_below="@+id/myLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#aaa"
+        android:padding="5dp"
+        android:text="快速进入"/>
+    <!--快速选择-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/traInfo"
+        android:layout_below="@+id/quickGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

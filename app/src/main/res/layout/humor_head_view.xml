@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y195">
+    <TextView
+        android:layout_marginLeft="@dimen/x11"
+        android:layout_marginTop="@dimen/y15"
+        android:drawableLeft="@mipmap/round"
+        android:drawablePadding="@dimen/x4"
+        android:text="推荐"
+        android:textSize="22sp"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/y9"
+        android:layout_marginLeft="@dimen/x11"
+        android:id="@+id/tujian_rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y135">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

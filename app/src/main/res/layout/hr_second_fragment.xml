@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/img_bg"
+    android:id="@+id/send_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:background="@color/blackbg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y34">
+        <TextView
+            android:id="@+id/tv_title"
+            android:textColor="#FFF"
+            android:text="跑圈"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/camers_iv"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <!--<com.dinuscxj.refresh.RecyclerRefreshLayout
+        android:layout_below="@id/title_layout"
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.dinuscxj.refresh.RecyclerRefreshLayout>-->
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:layout_below="@id/title_layout"
+        android:id="@+id/pullRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

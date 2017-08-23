@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newBack"
+    tools:context="com.weiaibenpao.demo.chislim.ui.GetByCreditsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newView">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/newWord"
+            android:text="我的抽奖"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/myLine"
+        android:layout_below="@+id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backThem"/>
+
+
+
+
+<ScrollView
+    android:layout_below="@id/myLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="#7CD8E3"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前积分:"/>
+
+        <TextView
+            android:id="@+id/creditTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="700"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/hintTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="您今天还没抽奖哦!"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/shan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/shan"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            />
+
+        <ImageView
+            android:id="@+id/yun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/yun"
+            android:scaleType="fitXY"
+            />
+
+        <com.weiaibenpao.demo.chislim.customs.LuckPanLayout
+            android:id="@+id/luckpan_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <com.weiaibenpao.demo.chislim.customs.RotatePan
+            android:id="@+id/rotatePan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="78dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/node"
+            android:clickable="true"
+            android:onClick="rotation"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/hit_user"
+            android:layout_below="@+id/luckpan_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/hit_user_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_background"
+                android:text="2017-1-01 14:30:30 王明 T600跑步机    2017-01-10 15:41:28 郑云 美腰机    2017-01-15 16:22:45 宋达 沙袋"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                >
+                <requestFocus/>
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中奖名单"
+                android:textColor="#ffffff"
+                android:background="@drawable/hit_backgroud"
+                android:padding="3dp"
+                android:layout_alignTop="@+id/hit_user_tv"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/game_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/hit_user"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_background"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_below="@+id/huodong_rule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1.点击页面抢购按钮，进入抽奖流程，按提示操作即可(参与本活动无需支付任何费用,仅凭积分抽奖)。\n2.本次活动萝莉“范儿”\御姐“范儿”\宅男“奢侈”各产生一名中奖者(每个0元抢购产品没人只可参与一次)。\n3.活动期间，每个手机号，获得的“劵号”后7位数字作为本次活动的“抽奖号”。"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/huodong_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动规则"
+                android:background="@drawable/rule_background"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5dp"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/game_rule"
+            android:layout_marginBottom="80dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
+
+    </RelativeLayout>

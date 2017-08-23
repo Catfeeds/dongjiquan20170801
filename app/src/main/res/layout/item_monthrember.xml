@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:id="@+id/viewLayout"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@color/backThem"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/myText"
+        android:textColor="@color/word1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_travel_more"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newBack"
+    tools:context="com.weiaibenpao.demo.chislim.ui.TravelMoreActivity">
+
+    <com.cjj.MaterialRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh"
+        app:overlay="true"
+        app:wave_show="true"
+        app:wave_color="#90ffffff"
+        app:progress_colors="@array/material_colors"
+        app:wave_height_type="higher"
+        >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/myTopLayout"
+                    android:background="@color/newView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/back"/>
+                    <TextView
+                        android:id="@+id/myImageWord"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/newWord"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="国 内 旅 行"/>
+                </RelativeLayout>
+
+                <!-- <LinearLayout
+                     android:background="@color/newView"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <View
+                         android:layout_width="0dp"
+                         android:layout_height="1dp"
+                         android:layout_weight="1"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_horizontal"
+                         android:textSize="16sp"
+                         android:padding="10dp"
+                         android:textStyle="bold"
+                         android:textColor="@color/newWord"
+                         android:text="国 内 精 选 旅 游 圣 地"/>
+                     <View
+                         android:layout_width="0dp"
+                         android:layout_height="1dp"
+                         android:layout_weight="1"/>
+
+                 </LinearLayout>
+                 <android.support.v7.widget.RecyclerView
+                     android:id="@+id/traMore"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>-->
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:background="@color/newView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/newWord"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:text="更 多 热 门 精 选"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+               <!-- <android.support.v7.widget.RecyclerView
+                    android:id="@+id/traInfo"
+                    android:background="@color/newView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>-->
+
+                <com.view.jameson.library.SpeedRecyclerView
+                    android:id="@+id/traInfo"
+                    android:background="@color/newView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:background="@color/newView"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/littleTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/newWord"
+                        android:text="国 内 精 选 旅 游 圣 地"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/traMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </com.cjj.MaterialRefreshLayout>
+
+</RelativeLayout>

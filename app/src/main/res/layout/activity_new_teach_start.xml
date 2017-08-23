@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_teach_start"
+    android:background="@color/newView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.weiaibenpao.demo.chislim.ui.NewTeachStartActivity">
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/myTop"
+            android:background="@color/newView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/fidback"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back"/>
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/backGround"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/myLine"
+            android:layout_below="@+id/myTop"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backThem"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_below="@id/myTop"
+            android:id="@+id/myGif"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:layout_below="@id/myGif"
+            android:id="@+id/text"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/backGround"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_below="@id/text"
+            android:id="@+id/progress_layout"
+            android:visibility="visible"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="运动进度："/>
+                <TextView
+                    android:id="@+id/fenzi"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/backGround"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:text="/"/>
+                <TextView
+                    android:id="@+id/fenmu"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/backGround"
+                    android:textSize="20sp"
+                    android:text="5"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+    <!--固定的layout-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:layout_below="@id/first_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_below="@id/text"
+            android:id="@+id/pratice_layout"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/singleTime"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textColor="@color/backGround"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"/>
+            <TextView
+                android:id="@+id/leak_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/backGround"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:text="/"/>
+            <TextView
+                android:id="@+id/allTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/backGround"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:text="30'"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calu_layout"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/calu_time"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textColor="@color/backThem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/center_layout"
+            android:layout_below="@id/calu_layout"
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginRight="30dp"
+                android:id="@+id/up"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/turn_left"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selector_left"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/circle_bar"
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.weiaibenpao.demo.chislim.customs.CircleProgressBar
+                    android:id="@+id/circle_chart"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="30dp"
+                android:id="@+id/next"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/turn_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selector_right"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!--底部布局 bottomLayout-->
+
+    <RelativeLayout
+        android:paddingBottom="5dp"
+        android:id="@+id/bottomLayout"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Chronometer
+            android:paddingRight="50dp"
+            android:id="@+id/sportTime"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="00:00:00"/>
+        <ProgressBar
+            android:layout_below="@id/sportTime"
+            android:id="@+id/myProgressRetangeBar"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:progressDrawable="@drawable/horizontal_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"/>
+    </RelativeLayout>
+
+
+
+
+
+
+    <!--蒙版-->
+
+    <LinearLayout
+        android:id="@+id/rest_layout"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:alpha="0.7"
+        android:background="#272727"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/newView"
+            android:text="休息10秒，注意劳逸结合！"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

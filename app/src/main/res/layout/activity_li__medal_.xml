@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_li__medal_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context="com.weiaibenpao.demo.chislim.ui.Li_Medal_Activity">
+
+    <RelativeLayout
+        android:background="@android:color/black"
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/backImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@mipmap/icon_return"/>
+        <TextView
+            android:id="@+id/viewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/word1"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:text="我的勋章"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="12dp"
+            android:id="@+id/medalNumLayout"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/medalTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:text="跑步勋章"/>
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/medalNum"
+                android:textColor="#888888"
+                android:layout_toRightOf="@+id/medalTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="（已获得0枚）"/>
+
+        </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/medal_grid"
+                android:numColumns="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+        <!--<LinearLayout-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/medal_layout"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<LinearLayout-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--style="@style/Layout_style">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/medalLayout_style">-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<ImageView-->
+                            <!--android:id="@+id/medal_5"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@mipmap/gray_5"/>-->
+                        <!--<Button-->
+                            <!--android:layout_marginRight="-100dp"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_width="25dp"-->
+                            <!--android:layout_height="25dp"-->
+                            <!--android:background="@drawable/medal_count"/>-->
+                    <!--</RelativeLayout>-->
+                    <!--<TextView-->
+                        <!--android:text="5km勋章"-->
+                        <!--style="@style/my_modelStyle"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--style="@style/medalLayout_style">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/medal_10"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@mipmap/gray_10"/>-->
+                    <!--<TextView-->
+                        <!--android:text="10km勋章"-->
+                        <!--style="@style/my_modelStyle"/>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--style="@style/Layout_style">-->
+
+                <!--<LinearLayout style="@style/medalLayout_style">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/medal_half"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:src="@mipmap/gray_21" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/my_modelStyle"-->
+                        <!--android:text="半马勋章" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/medalLayout_style">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/medal_whole"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@mipmap/gray_42"/>-->
+                    <!--<TextView-->
+                        <!--android:text="全马勋章"-->
+                        <!--style="@style/my_modelStyle"/>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--style="@style/Layout_style">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/medalLayout_style">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/medal_50"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@mipmap/gray_50"/>-->
+                    <!--<TextView-->
+                        <!--android:text="50km勋章"-->
+                        <!--style="@style/my_modelStyle"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--style="@style/medalLayout_style">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/medal_100"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@mipmap/gray_100"/>-->
+                    <!--<TextView-->
+                        <!--android:text="100km勋章"-->
+                        <!--style="@style/my_modelStyle"/>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+
+</LinearLayout>

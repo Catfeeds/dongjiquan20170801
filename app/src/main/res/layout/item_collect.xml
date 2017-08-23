@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/newView"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <!--<ImageView
+        android:id="@+id/collectImg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>-->
+    <com.gjiazhe.scrollparallaximageview.ScrollParallaxImageView
+        android:id="@+id/collectImg"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/collectTitle"
+            android:textColor="@color/backWord"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/collectTime"
+            android:textColor="@color/backWord"
+            android:layout_below="@+id/collectTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/collectTab"
+            android:textColor="@color/backWord"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:padding="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</RelativeLayout>

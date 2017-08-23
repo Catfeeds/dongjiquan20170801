@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_gravity="center"
+    android:id="@+id/from_msg_date"
+    android:textColor="@color/newBack"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2012-12-12"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/robot_img"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/service" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:text="小迈"
+        android:textSize="16sp"
+        android:textColor="@color/word1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/from_msg"
+            android:gravity="left|center"
+            android:text="你好"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:singleLine="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_robot"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

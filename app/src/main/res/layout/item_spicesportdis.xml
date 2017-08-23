@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/myImage"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:background="#333"
+        android:alpha="0.5"
+        android:layout_height="90dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/myTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:text="这里是标题"/>
+            <TextView
+                android:id="@+id/myHot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="25dp"
+                android:textColor="@color/blue_bg"
+                android:textSize="14sp"
+                android:text="这里是热度"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/myCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="14dp"
+            android:text="    这里是描述，这里是描述，这里是描述，这里是描述，这里是描述，这里是描述，这里是描述，这里是描述，这里是描述，这里是描述，这里是描述，这里是描述"/>
+    </LinearLayout>
+</RelativeLayout>

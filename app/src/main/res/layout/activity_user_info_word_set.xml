@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_info_word_set"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_bg"
+    tools:context="com.weiaibenpao.demo.chislim.ui.UserInfoWordSetActivity">
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/icon_return"/>
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/word1"
+            android:textSize="18sp"
+            android:text="个人信息"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/newView"
+        android:layout_below="@+id/toplayout"
+        android:paddingTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="360dp">
+        <EditText
+            android:id="@+id/wordText"
+            android:background="@null"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:maxLines="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入昵称"/>
+        <View
+            android:id="@+id/myLine"
+            android:layout_below="@+id/wordText"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/backLine"/>
+        <TextView
+            android:id="@+id/wordIntro"
+            android:layout_below="@+id/myLine"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好名字可以让你的朋友更容易的记住你"/>
+    </RelativeLayout>
+
+    
+    <Button
+        android:id="@+id/commit"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/userinfobutton"
+        android:textSize="20sp"
+        android:textColor="@color/word1"
+        android:text="确 认"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+</RelativeLayout>

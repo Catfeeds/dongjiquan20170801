@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="paobuji_color">#7a2095</color>
+    <color name="colorPrimary">#333339</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backGround">#3b3b3b</color>
+    <color name="backTop">#34333A</color>
+    <color name="backView">#494659</color>
+    <color name="backThem">#f26a44</color>
+    <color name="backWord">#eee</color>
+    <color name="backLine">#ccc</color>
+    <color name="backHint">#cccccc</color>
+    <color name="blue_bg1">#0080FF</color>
+    <color name="test">#234Dfa</color>
+    <color name="translucent">#00000000</color>
+    <color name="clodGray">#808A87</color>
+    <color name="pure">#4b4b4b</color>
+    <color name="newBack">#f3f9f9</color>
+    <color name="newView">#fff</color>
+    <color name="word1">#fff</color>
+    <color name="word4">#eee</color>
+    <color name="word2">#ddd</color>
+    <color name="word3">#ccc</color>
+    <color name="newWord">#666</color>
+    <color name="newWriteWord">#aaa</color>
+    <color name="red_yuan">#FF3030</color>
+    <color name="green_yuan">#00CD66</color>
+    <color name="black">#222</color>
+    <color name="blackbg">#000</color>
+    <color name="white">#eee</color>
+    <color name="white10">#1Affffff</color>
+    <color name="white50">#80ffffff</color>
+    <color name="blue_bg">#0466e0</color>
+    <color name="userInfoBlue">#027ac9</color>
+
+    <color name="red_bg">#ff2233</color>
+    <color name="green_bg">#22ff33</color>
+    <color name="yellow_bg">#f4c600</color>
+    <color name="pink">#CC358F</color>
+
+    <color name="song_playing">#b621ae</color>
+    <color name="song_stop">#333</color>
+    <color name="divider_gray">#ccc</color>
+    <color name="divider_deep_gray">#666</color>
+
+    <color name="main_color">#5CB85C</color>
+
+    <color name="track_line_1">#80FF00</color>
+    <color name="track_line_2">#86FF00</color>
+    <color name="track_line_3">#8CFF00</color>
+    <color name="track_line_4">#92FF00</color>
+    <color name="track_line_5">#98FF00</color>
+    <color name="track_line_6">#9EFF00</color>
+    <color name="track_line_7">#A4FF00</color>
+    <color name="track_line_8">#AAFF00</color>
+    <color name="track_line_9">#B0FF00</color>
+    <color name="track_line_10">#B6FF00</color>
+    <color name="track_line_11">#BCFF00</color>
+    <color name="track_line_12">#C2FF00</color>
+    <color name="track_line_13">#C8FF00</color>
+    <color name="track_line_14">#CEFF00</color>
+    <color name="track_line_15">#D4FF00</color>
+    <color name="track_line_16">#DAFF00</color>
+    <color name="track_line_17">#E0FF00</color>
+    <color name="track_line_18">#E6FF00</color>
+    <color name="track_line_19">#ECFF00</color>
+    <color name="track_line_20">#F2FF00</color>
+    <color name="track_line_21">#F8FF00</color>
+    <color name="track_line_22">#FEFF00</color>
+    <color name="track_line_23">#FFFF00</color>
+    <color name="track_line_24">#FFFF00</color>
+    <color name="track_line_25">#FFFF00</color>
+    <color name="track_line_26">#FFFF00</color>
+    <color name="track_line_27">#FFFF00</color>
+    <color name="track_line_28">#FFFF00</color>
+    <color name="track_line_29">#FFFF00</color>
+    <color name="track_line_30">#FFFF00</color>
+    <color name="track_line_31">#FFFF00</color>
+    <color name="track_line_32">#FFFF00</color>
+    <color name="track_line_33">#FFFF00</color>
+    <color name="track_line_34">#FFFF00</color>
+    <color name="track_line_35">#FFFF00</color>
+    <color name="track_line_36">#FFFF00</color>
+    <color name="track_line_37">#FFFF00</color>
+    <color name="track_line_38">#FFF900</color>
+    <color name="track_line_39">#FFF300</color>
+    <color name="track_line_40">#FFED00</color>
+    <color name="track_line_41">#FFE700</color>
+    <color name="track_line_42">#FFE100</color>
+    <color name="track_line_43">#FFDB00</color>
+    <color name="track_line_44">#FFD500</color>
+    <color name="track_line_45">#FFCF00</color>
+    <color name="track_line_46">#FFC900</color>
+    <color name="track_line_47">#FFC300</color>
+    <color name="track_line_48">#FFBD00</color>
+    <color name="track_line_49">#FFB700</color>
+    <color name="track_line_50">#FFB100</color>
+    <color name="track_line_51">#FFAB00</color>
+    <color name="track_line_52">#FFA500</color>
+    <color name="track_line_53">#FF9F00</color>
+    <color name="track_line_54">#FF9900</color>
+    <color name="track_line_55">#FF9300</color>
+    <color name="track_line_56">#FF8D00</color>
+    <color name="track_line_57">#FF8700</color>
+    <color name="track_line_58">#FF8100</color>
+    <color name="track_line_59">#FF7B00</color>
+    <color name="track_line_60">#FF7500</color>
+    <color name="track_line_61">#FF6F00</color>
+    <color name="track_line_62">#FF6900</color>
+    <color name="track_line_63">#FF6300</color>
+    <color name="track_line_64">#FF5D00</color>
+    <color name="track_line_65">#FF5700</color>
+    <color name="track_line_66">#FF5100</color>
+    <color name="track_line_67">#FF4B00</color>
+    <color name="track_line_68">#FF4500</color>
+    <color name="track_line_69">#FF4000</color>
+    <color name="track_line_70">#FF4000</color>
+    <color name="track_line_71">#FF4000</color>
+    <color name="track_line_72">#FF4000</color>
+    <color name="track_line_73">#FF4000</color>
+
+
+    <!--
+    hr的颜色
+    -->
+    <color name="button_bg">#FFF</color>
+    <color name="hr_top_bg">#181818</color>
+    <color name="ku_bg">#242424</color>
+    <color name="holo_black">#ff111111</color>
+    <color name="pin_lun">#189FF6</color>
+    <color name="h_text">#fff</color>
+
+
+    <color name="trans_parent">#00000000</color> <!--透明度-->
+    <!--更新-->
+    <color name="apk_color">#189ff6</color> <!--透明度-->
+
+
+
+    <!--深黑，文字颜色-->
+    <color name="darkText">#333333</color>
+    <!--浅黑文字颜色-->
+    <color name="lightText">#b3b3b3 </color>
+    <!--细线-->
+    <color name="lineText">#dcdcdc </color>
+    <!--背景色-->
+    <color name="backgroundText">#f0f0f0 </color>
+</resources>
+

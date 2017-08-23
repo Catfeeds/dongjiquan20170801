@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rootActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.weiaibenpao.demo.chislim.ui.TravelInfoActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <View
+            android:id="@+id/myBar"
+            android:layout_width="match_parent"
+            android:background="@color/backView"
+            android:alpha="0"
+            android:layout_height="40dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+            android:id="@+id/pullLoadMoreRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

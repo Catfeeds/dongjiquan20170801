@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/funsitem"
+    android:orientation="horizontal"
+    android:background="@color/newView"
+    android:layout_marginBottom="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="@dimen/x40"
+        android:layout_height="@dimen/x40"
+        android:layout_margin="12dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/boy"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:textSize="16sp"
+        android:textColor="@color/newWord"
+        android:layout_gravity="center_vertical"
+        android:text="亚当"/>
+</LinearLayout>

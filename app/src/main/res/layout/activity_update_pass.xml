@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_update_pass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="com.weiaibenpao.demo.chislim.ui.UpdatePassActivity">
+    <RelativeLayout
+
+        android:background="@mipmap/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/icon_return"/>
+
+        <TextView
+            android:id="@+id/titleTv"
+
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="修改密码"
+            android:textSize="18sp"
+           />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+       <RelativeLayout
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <EditText
+               android:id="@+id/phone_et"
+               style="@style/password_et_style"
+               android:hint="请输入手机号码"/>
+           <Button
+               android:id="@+id/sendSms"
+        android:layout_marginRight="12dp"
+               android:onClick="send_message"
+               android:clickable="true"
+               android:textSize="12sp"
+               android:text="发送验证码"
+               android:textColor="#027ac9"
+               android:background="@drawable/send_message_btn"
+               android:layout_centerInParent="true"
+               android:layout_alignParentRight="true"
+               android:layout_width="wrap_content"
+               android:layout_height="20dp" />
+           <View
+
+               android:layout_below="@id/phone_et"
+               style="@style/password_view_style"/>
+       </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+
+                android:id="@+id/config_pass"
+                style="@style/password_et_style"
+                android:hint="请输入验证码"/>
+
+            <View
+                android:layout_below="@id/config_pass"
+                style="@style/password_view_style"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/newPass"
+                android:inputType="numberPassword"
+                style="@style/password_et_style"
+                android:hint="请输入新密码"/>
+            <View
+                android:layout_below="@id/newPass"
+                style="@style/password_view_style"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+               android:inputType="numberPassword"
+                android:id="@+id/newPassTwo"
+                style="@style/password_et_style"
+                android:hint="请再次输入密码"/>
+            <View
+                android:layout_below="@id/newPassTwo"
+                style="@style/password_view_style"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/updatePass"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/userinfobutton"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="确认"/>
+    </LinearLayout>
+
+</LinearLayout>

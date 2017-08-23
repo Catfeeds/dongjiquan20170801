@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:alpha="0.7"
+    android:background="@color/word1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:text="取消"/>
+        <TextView
+            android:id="@+id/commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="15dp"
+            android:text="确定"/>
+    </RelativeLayout>
+    <DatePicker
+
+        android:id="@+id/update_datePicker"
+        style="@style/datePickerTheme"
+        android:calendarViewShown="false"
+        android:layout_centerInParent="true"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarTextColor="@color/divider_gray"
+        android:layout_below="@id/date_layout"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.weiaibenpao.demo.chislim.ui.SuccessActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:id="@+id/activity_success"
+    android:background="@color/newBack"
+    android:orientation="vertical"
+    android:alpha="0.97"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newView">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/newWord"
+            android:text="我的勋章"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newView">
+        <LinearLayout
+            android:id="@+id/disLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newWord"
+                android:textStyle="bold"
+                android:text="跑步勋章"/>
+            <TextView
+                android:id="@+id/getkm"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newWord"
+                android:text="已获得0枚"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mykm"
+            android:layout_below="@+id/disLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/newView">
+        <LinearLayout
+            android:id="@+id/gradeLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newWord"
+                android:textStyle="bold"
+                android:text="等级勋章"/>
+            <TextView
+                android:id="@+id/getgrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已获得0枚"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mygrade"
+            android:layout_below="@+id/gradeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/newView">
+        <LinearLayout
+            android:id="@+id/markLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newWord"
+                android:textStyle="bold"
+                android:text="积分勋章"/>
+            <TextView
+                android:id="@+id/getmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(已获得0枚)"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mymark"
+            android:layout_below="@+id/markLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

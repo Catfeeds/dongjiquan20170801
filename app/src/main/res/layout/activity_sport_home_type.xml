@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sport_home_type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/newBack"
+    tools:context="com.weiaibenpao.demo.chislim.ui.SportHomeTypeActivity">
+    <RelativeLayout
+        android:id="@+id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newView">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#aaa"
+            android:text="室内跑步模式"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sportHomeType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="趣味跑步"/>
+    <LinearLayout
+        android:id="@+id/muLayout"
+        android:clickable="true"
+        android:background="@color/newView"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/typeimage"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:layout_width="100dp"
+            android:layout_height="55dp"/>
+        <TextView
+            android:id="@+id/typeintro"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/newWord"
+            android:text="图形跑步"/>
+        <TextView
+            android:id="@+id/typetime"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/newWord"
+            android:text="65分钟"/>
+    </LinearLayout>
+
+</LinearLayout>

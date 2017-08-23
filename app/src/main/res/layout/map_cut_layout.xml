@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:background="@color/backThem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weiaibenpao.demo.chislim.ui.AboutActivity">
+
+<ImageView
+    android:id="@+id/myMapScreen"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="fitXY"
+    android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:layout_below="@id/myMapScreen"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <Button
+            android:id="@+id/Imgupload"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/Imgupload"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/cancle1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

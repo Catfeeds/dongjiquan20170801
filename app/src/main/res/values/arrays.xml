@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="first_viewpage_arrays">
+        <item>音乐</item>
+        <item>电影</item>
+        <item>教程</item>
+        <item>占位</item>
+    </string-array>
+    <string-array name="second_viewpage_arrays">
+        <item>发现</item>
+        <item>好友</item>
+        <item>动态</item>
+        <item>占位</item>
+    </string-array>
+    <string-array name="third_viewpage_arrays">
+        <item>在旅途</item>
+        <item>游记</item>
+        <item>晒一晒</item>
+        <item>爆料</item>
+    </string-array>
+    <string-array name="four_viewpage_arrays">
+        <item>个人</item>
+        <item>个人</item>
+        <item>个人</item>
+        <item>个人</item>
+    </string-array>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="inner_padding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="WindmillView">
+        <attr name="leaf_color" format="color"/>
+        <attr name="WindVelocity" format="integer"/>
+        <attr name="CircleRadius" format="integer"/>
+    </declare-styleable>
+
+    <array name="url">
+        <item>http://img.zcool.cn/community/01d28457d621800000018c1bb7877e.jpg</item>
+        <item>http://img.zcool.cn/community/01ae5656e1427f6ac72531cb72bac5.jpg</item>
+        <item>http://img.zcool.cn/community/0166c756e1427432f875520f7cc838.jpg</item>
+        <item>http://img.zcool.cn/community/018fdb56e1428632f875520f7b67cb.jpg</item>
+        <item>http://img.zcool.cn/community/01c8dc56e1428e6ac72531cbaa5f2c.jpg</item>
+        <item>http://img.zcool.cn/community/01fd2756e142716ac72531cbf8bbbf.jpg</item>
+        <item>http://img.zcool.cn/community/0192a557a352ef0000012e7ed104e4.jpg</item>
+    </array>
+    <array name="url2">
+        <item>http://img.zcool.cn/community/01b72057a7e0790000018c1bf4fce0.png</item>
+        <item>http://img.zcool.cn/community/01fca557a7f5f90000012e7e9feea8.jpg</item>
+        <item>http://img.zcool.cn/community/01996b57a7f6020000018c1bedef97.jpg</item>
+        <item>http://img.zcool.cn/community/01700557a7f42f0000018c1bd6eb23.jpg</item>
+    </array>
+    <array name="url3">
+        <item>http://img.zcool.cn/community/01700557a7f42f0000018c1bd6eb23.jpg</item>
+    </array>
+    <array name="title">
+        <item>51巅峰钜惠</item>
+        <item>十大星级品牌联盟，全场2折起</item>
+        <item>生命不是要超越别人，而是要超越自己。</item>
+        <item>己所不欲，勿施于人。——孔子</item>
+        <item>嗨购5折不要停</item>
+        <item>以诚感人者，人亦诚而应。</item>
+        <item>习惯改变命运，细节铸就终身。</item>
+    </array>
+    <array name="anim">
+        <item>Default</item>
+        <item>Accordion</item>
+        <item>BackgroundToForeground</item>
+        <item>ForegroundToBackground</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>DepthPage</item>
+        <item>FlipHorizontal</item>
+        <item>FlipVertical</item>
+        <item>RotateDown</item>
+        <item>RotateUp</item>
+        <item>ScaleInOut</item>
+        <item>Stack</item>
+        <item>Tablet</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>ZoomOutSlide</item>
+    </array>
+    <array name="style">
+        <item>NOT_INDICATOR</item>
+        <item>CIRCLE_INDICATOR</item>
+        <item>NUM_INDICATOR</item>
+        <item>NUM_INDICATOR_TITLE</item>
+        <item>CIRCLE_INDICATOR_TITLE</item>
+        <item>CIRCLE_INDICATOR_TITLE_INSIDE</item>
+
+    </array>
+    <array name="indicator">
+        <item>LEFT</item>
+        <item>CENTER</item>
+        <item>RIGHT</item>
+    </array>
+
+    <declare-styleable name="GifMoviewView">
+
+        <attr name="gif" format="reference" />
+
+        <attr name="paused" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomTheme">
+
+        <attr name="gifMoviewViewStyle" format="reference" />
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="wwv_WindowView">
+        <!-- May be any number (defined in microseconds), or one of the pre-defined enums. -->
+        <attr name="wwv_sensor_sampling_period" format="integer">
+            <!-- Maps to SensorManager#SENSOR_DELAY_FASTEST -->
+            <enum name="fast" value="0" />
+            <!-- Maps to SensorManager#SENSOR_DELAY_GAME -->
+            <enum name="normal" value="1" />
+            <!-- Maps to SensorManager#SENSOR_DELAY_UI -->
+            <enum name="slow" value="2" />
+        </attr>
+
+        <!-- All in degrees.重力感应图片特效 -->
+        <attr name="wwv_max_pitch" format="float" />
+        <attr name="wwv_max_roll" format="float" />
+        <attr name="wwv_vertical_origin" format="float" />
+        <attr name="wwv_horizontal_origin" format="float" />
+
+        <attr name="wwv_tilt_sensor_mode" format="enum">
+            <enum name="Automatic" value="0" />
+            <enum name="Manual" value="1" />
+        </attr>
+
+        <attr name="wwv_orientation_mode" format="enum">
+            <enum name="Absolute" value="0" />
+            <enum name="Relative" value="1" />
+        </attr>
+
+        <attr name="wwv_translate_mode" format="enum">
+            <enum name="Constant" value="0" />
+            <enum name="Proportional" value="1" />
+        </attr>
+
+        <attr name="wwv_max_constant_translation" format="dimension" />
+    </declare-styleable>
+</resources>

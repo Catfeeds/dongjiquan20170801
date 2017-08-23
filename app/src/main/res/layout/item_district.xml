@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/provinceIv"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:background="#333"
+        android:alpha="0.5"
+        android:layout_height="150dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/englishTv"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/word1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:text="300"/>
+        <TextView
+            android:id="@+id/provincesTv"
+            android:textColor="@color/word1"
+            android:padding="6dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="湖北"/>
+    </LinearLayout>
+</RelativeLayout>

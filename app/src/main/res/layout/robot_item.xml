@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:background="@mipmap/img_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/first"
+        android:alpha="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/blackbg">
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/back"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_return"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="客服"
+            android:textColor="@color/backWord"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:alpha="0.9"
+        android:orientation="horizontal"
+        android:id="@+id/bottomlayout"
+        android:background="@color/blackbg"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:id="@+id/input_msg"
+            android:background="@drawable/input_setting"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:id="@+id/sendBtn"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:textColor="@color/newBack"
+            android:text="发 送"/>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/first"
+        android:layout_above="@id/bottomlayout"
+        android:id="@+id/listview"
+        android:divider="@null"
+        android:dividerHeight="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

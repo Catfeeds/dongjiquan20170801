@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.weiaibenpao.demo.chislim">
+
+    <!-- Required -->
+    <permission
+        android:name="${applicationId}.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 读取电话状态，播放歌曲的时候用来监听电话状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 获取通讯录权限 -->
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- 极光推送 -->
+    <!-- Required -->
+    <uses-permission android:name="com.zxl.tsetjpush.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 接收短信的权限 -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 广播权限 -->
+    <uses-permission android:name="android.permission.READ_CELL_BROADCASTS" />
+
+    <!-- 语音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".sportoutdoor.presentation.module.PedometerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ndjq"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.StartActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.LeadActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.DistenceActivity" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.RegistActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.UpdatePassActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.FindPassActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.GetByCreditsActivity" />
+        <activity
+            android:name=".ui.SetActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.SportRecordActivity" />
+        <activity android:name=".ui.UpdateUserActivity" />
+        <activity android:name=".ui.NewTeachDetailsActivity" />
+        <activity
+            android:name=".ui.AboutActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.SportRecordMixedActivity" />
+        <activity
+            android:name=".ui.PerfectActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.SuccessActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.MarkActivity" />
+        <activity android:name=".ui.RobotActivity" />
+        <activity android:name=".ui.MarkInfoActivity" />
+        <activity android:name=".ui.MyHistoryActivity" />
+        <activity
+            android:name=".ui.SportHomeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".video.VideoActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.SportoOutDoorActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.MusicActivity" />
+        <activity android:name=".ui.TravelInfoActivity" />
+        <activity
+            android:name=".ui.ShowVideoActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden"
+            android:launchMode="singleInstance" />
+        <activity android:name=".ui.TravelPictureActivity" />
+        <activity android:name=".ui.NotesMessageActivity" />
+        <activity android:name=".ui.TravelMoreActivity" />
+        <activity android:name=".ui.NotesUserItemActivity" />
+        <activity android:name=".ui.CourseActivity" />
+        <activity android:name=".ui.NewTeachActivity" />
+        <activity android:name=".ui.NewTeachPlanActivity" />
+        <activity android:name=".ui.NewTeachStartActivity" />
+        <activity android:name=".ui.SportStyleActivity" />
+        <activity android:name=".ui.MessageActivity" />
+        <activity android:name=".ui.MySportSimRemberActivity" />
+        <activity
+            android:name=".map.activity.DrawTraceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jianbaopp.DrawTraceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zfdang.multiple_images_selector.ImagesSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleInstance" />
+
+        <!-- 图片选择 -->
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <!-- 计步器服务 -->
+        <service android:name=".sportoutdoor.presentation.view.service.PedometerService" />
+        <!-- 音乐播放服务 -->
+        <service
+            android:name=".music.service.Start_Service"
+            android:exported="false" />
+
+        <!-- 蓝牙BLE -->
+        <service
+            android:name=".ble.service.BLEService"
+            android:enabled="true" />
+
+        <!-- 地图定位 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="74793c537802233e325e980f29a024cd" />
+
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- android:process="com.xxx.xxxservice" -->
+
+        <service
+            android:name=".service.Map_Service"
+            android:enabled="true"
+            android:exported="true"
+            android:priority="1000" />
+        <service
+            android:name=".service.RemoteService"
+            android:enabled="true"
+            android:priority="1000"
+            android:process=":remoteService" />
+
+        <!-- apk更新 -->
+        <service android:name=".update.UpdateService" />
+
+        <!-- 友盟 -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58048aade0f55a92800024bc" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wbapi.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105642894" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".ui.DisSportStyleActivity" />
+        <activity android:name=".ui.TimeSportStyleActivity" />
+        <activity android:name=".ui.StepSportActivity" />
+        <activity android:name=".ui.TalkActivity" />
+        <activity android:name=".ui.SportHomeTypeActivity" />
+        <activity android:name=".ui.FavouritePicActivity" />
+        <activity android:name=".ui.FavouritMapActivity">
+            <intent-filter>
+                <action android:name="com.jianbaopp.FavouritMapActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.FavouriteMapOutHomeActivity">
+            <intent-filter>
+                <action android:name="com.jianbaopp.FavouriteMapOutHomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MySportRemberActivity" />
+        <activity android:name=".ui.SportDisStyleActivity" />
+        <activity android:name=".ui.CommentActivity" />
+
+        <service
+            android:name=".service.ControlService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ui.MedalInfoActivity" />
+        <activity android:name=".ui.MyActivityActivity" />
+        <activity android:name=".ui.ActivityRegisterActivity" />
+        <activity android:name=".ui.TravelHtmlActivity" />
+        <activity android:name=".ui.MyCollectActivity" />
+        <activity android:name=".ui.UserBackActivity" />
+        <activity android:name=".ui.SportHomeDisSpiceActivity">
+            <intent-filter>
+                <action android:name="com.jianbaopp.SportHomeDisSpiceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.SportOutDisSpiceActivity">
+            <intent-filter>
+                <action android:name="com.jianbaopp.SportOutDisSpiceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.SportHomeRemberActivity" />
+        <activity android:name=".ui.SelectCitySportActivity" />
+        <activity android:name=".ui.MyGeocodeSelectActivity" />
+        <activity android:name=".ui.MySportDisRememerActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <!--
+            <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+
+        <activity android:name=".ui.SportOutDistrictActivity">
+            <intent-filter>
+                <action android:name="com.jianbaopp.SportOutDistrictActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.SportHomeDistrictActivity">
+            <intent-filter>
+                <action android:name="com.jianbaopp.SportHomeDistrictActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.CumulativeActivity" />
+        <activity android:name=".ui.MusicTypeActivity" />
+        <activity android:name=".hurui.activity.RunningMachineActivity" />
+        <activity android:name=".hurui.activity.HWebViewActivity" />
+        <activity android:name=".hurui.activity.TourismActivity" />
+        <activity android:name=".hurui.activity.PublishHumorActivity" />
+        <activity android:name=".hurui.activity.PhotoActivity" />
+        <activity android:name=".hurui.activity.H_PhotoActivity" />
+        <activity android:name=".hurui.activity.UserDetailActivity"
+            android:launchMode="singleTask">
+            </activity>
+        <activity android:name=".hurui.activity.HMuiscListActivity" />
+        <activity android:name=".ui.Li_FunsActivity" />
+        <activity android:name=".ui.UserInfoWordSetActivity" />
+        <activity android:name=".ui.Li_Medal_Activity" />
+        <activity android:name=".ui.Li_PraiseList_Activity">
+
+        </activity>
+        <activity
+            android:name=".ui.MomentDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:launchMode="singleTop"
+            />
+
+    </application>
+
+</manifest>

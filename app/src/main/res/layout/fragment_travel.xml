@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_travel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newBack">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--宽度高度决定是前后还是左右-->
+                <com.weiaibenpao.demo.chislim.gravityresult.WindowView
+                    android:id="@+id/windowView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:contentDescription="@string/content_description"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="一颗年轻的世界梦"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:translationY="30dp"
+                    android:text="为爱奔跑"/>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/localLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/newView"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/titleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/backGround"
+                        android:text="国 内 旅 游"/>
+                    <TextView
+                        android:id="@+id/getLocation"
+                        android:layout_below="@+id/titleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:textSize="12sp"
+                        android:clickable="true"
+                        android:text="查看更多国内景点"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:padding="15dp"
+                        android:src="@mipmap/right"/>
+                </RelativeLayout>
+
+                <!--<android.support.v7.widget.RecyclerView
+                    android:id="@+id/localHot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>-->
+                <com.view.jameson.library.SpeedRecyclerView
+                    android:id="@+id/localHot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gatLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/newView"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/gatText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/backGround"
+                        android:text="港 澳 台 旅 游"/>
+                    <TextView
+                        android:id="@+id/getGAT"
+                        android:layout_below="@+id/gatText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="5sp"
+                        android:textSize="12sp"
+                        android:clickable="true"
+                        android:text="查看更多港，澳，台旅行景点"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:padding="15dp"
+                        android:src="@mipmap/right"/>
+                </RelativeLayout>
+
+
+                <!--<android.support.v7.widget.RecyclerView
+                    android:id="@+id/localTwoHot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>-->
+
+                <com.view.jameson.library.SpeedRecyclerView
+                    android:id="@+id/localTwoHot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/foreignLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/newView"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/gjtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/backGround"
+                        android:text="国 际 旅 游"/>
+                    <TextView
+                        android:id="@+id/getForeign"
+                        android:layout_below="@+id/gjtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="5sp"
+                        android:textSize="12sp"
+                        android:clickable="true"
+                        android:text="查看更多国外景点"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:padding="15dp"
+                        android:src="@mipmap/right"/>
+
+                </RelativeLayout>
+
+
+                <!-- <android.support.v7.widget.RecyclerView
+                     android:id="@+id/foreignHot"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>-->
+                <com.view.jameson.library.SpeedRecyclerView
+                    android:id="@+id/foreignHot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/favotiteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/newView"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/backGround"
+                    android:text="猜 你 喜 欢"/>
+                <TextView
+                    android:id="@+id/getfavotite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:clickable="true"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/favotiteHot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

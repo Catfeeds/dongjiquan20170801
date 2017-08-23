@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:background="@mipmap/img_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weiaibenpao.demo.chislim.ui.AboutActivity">
+    <RelativeLayout
+        android:id="@+id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_return"/>
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/word1"
+            android:text="关于"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/myWebView"
+        android:layout_below="@id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</RelativeLayout>

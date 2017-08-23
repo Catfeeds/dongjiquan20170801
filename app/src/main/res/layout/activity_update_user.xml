@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/img_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_update_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weiaibenpao.demo.chislim.ui.UpdateUserActivity">
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/icon_return"/>
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/word1"
+            android:textSize="18sp"
+            android:text="个人信息"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/okUpdate"
+            android:clickable="true"
+            android:textColor="@color/word1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toplayout"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:onClick="updateImage"
+            android:background="@color/newView"
+            android:clickable="true">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+               style="@style/upDataStyle"
+                android:text="点击更换头像"/>
+            <com.weiaibenpao.demo.chislim.map.customview.CircleImageView
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+
+                android:id="@+id/myImage"
+                android:layout_marginRight="10dp"
+
+                android:src="@mipmap/boy"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x60"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backLine" />
+        <RelativeLayout
+            style="@style/upDataLayoutStyle"
+            android:onClick="updateName">
+            <TextView
+
+                android:layout_alignParentLeft="true"
+                style="@style/upDataStyle"
+                android:text="昵称"/>
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/updateUserName"
+                android:layout_alignParentRight="true"
+                style="@style/upDataStyle"
+                android:text="东极圈"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backLine" />
+        <RelativeLayout
+            style="@style/upDataLayoutStyle"
+            android:onClick="updateSex"
+           >
+            <TextView
+                android:layout_alignParentLeft="true"
+                style="@style/upDataStyle"
+                android:text="性别"/>
+            <TextView
+                style="@style/upDataStyle"
+                android:id="@+id/updateSex"
+                android:text="男"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backLine" />
+        <RelativeLayout
+            android:onClick="updateBirth"
+            style="@style/upDataLayoutStyle">
+            <TextView
+                android:layout_alignParentLeft="true"
+                style="@style/upDataStyle"
+                android:text="生日"/>
+            <TextView
+                android:id="@+id/updateBirth"
+                android:layout_alignParentRight="true"
+                style="@style/upDataStyle"
+                android:text="1990-09-09"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backLine" />
+        <RelativeLayout
+            android:onClick="userHeight"
+            android:clickable="true"
+            style="@style/upDataLayoutStyle">
+            <TextView
+                android:layout_alignParentLeft="true"
+                style="@style/upDataStyle"
+                android:text="身高"/>
+            <!--<LinearLayout-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+            <TextView
+                android:id="@+id/cccc"
+                android:text="cm"
+                android:layout_alignParentRight="true"
+                style="@style/upDataStyle"
+                android:padding="0dp"
+                android:layout_marginRight="12dp"
+                android:layout_centerInParent="true"
+                />
+                <TextView
+                    android:layout_toLeftOf="@id/cccc"
+                    android:id="@+id/updateHeigh"
+                    android:text="175"
+                    android:padding="0dp"
+                    style="@style/upDataStyle"/>
+
+
+
+            <!--</LinearLayout>-->
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backLine" />
+        <RelativeLayout
+
+
+            android:onClick="userWeight"
+            style="@style/upDataLayoutStyle">
+            <TextView
+
+                android:layout_alignParentLeft="true"
+                style="@style/upDataStyle"
+                android:text="体重"/>
+
+              <TextView
+                  android:layout_marginRight="12dp"
+                  android:id="@+id/aaaa"
+                  android:text="kg"
+                  android:layout_alignParentRight="true"
+                  style="@style/upDataStyle"
+                  android:padding="0dp"
+                  android:layout_centerInParent="true"
+                  />
+              <TextView
+                  android:layout_toLeftOf="@id/aaaa"
+                  android:text="0"
+                  android:padding="0dp"
+                  android:id="@+id/updateWeight"
+                  style="@style/upDataStyle"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backLine" />
+        <RelativeLayout
+            android:onClick="updateHobby"
+            style="@style/upDataLayoutStyle">
+            <TextView
+                android:layout_alignParentLeft="true"
+                style="@style/upDataStyle"
+                android:text="爱好"
+                android:id="@+id/textView3" />
+            <EditText
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:id="@+id/updateHobby"
+                style="@style/upDataStyle"
+                android:text="跑步"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backLine" />
+        <LinearLayout
+            android:onClick="updateUserIntro"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="139.5dp">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/upDataStyle"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="个性签名" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/userIntro"
+                android:padding="12dp"
+                style="@style/editStyle"
+                android:text="跑步者有一种渴望"
+               />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

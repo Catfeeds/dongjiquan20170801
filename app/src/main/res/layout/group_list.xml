@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj1"
+    android:alpha="0.9"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:cacheColorHint="#55000000"
+        android:divider="@null"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0.0sp"
+        android:scrollingCache="false" />
+
+</LinearLayout>

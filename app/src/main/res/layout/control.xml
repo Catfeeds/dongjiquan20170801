@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/upmusicIV"
+        android:layout_margin="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/up"/>
+    <ImageView
+        android:id="@+id/startIV"
+        android:layout_margin="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <ImageView
+        android:id="@+id/nextIV"
+        android:layout_margin="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/next"/>
+
+</LinearLayout>

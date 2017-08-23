@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_running_machine"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ku_bg"
+    tools:context="com.weiaibenpao.demo.chislim.hurui.activity.RunningMachineActivity">
+    <RelativeLayout
+        android:background="@color/ku_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y34">
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="跑步机"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:id="@+id/runmachine_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView>
+</LinearLayout>

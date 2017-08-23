@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="40dp"
+    android:orientation="vertical">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/gray_10"
+                    android:id="@+id/medal_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+                <Button
+                    android:translationX="-40dp"
+                    android:text="3"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:visibility="gone"
+
+                    android:id="@+id/count_btn"
+                    android:layout_toRightOf="@id/medal_img"
+                    android:background="@drawable/medal_count"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:text="11222"
+                android:id="@+id/medal_tv"
+                style="@style/my_modelStyle"
+               />
+
+
+
+</LinearLayout>

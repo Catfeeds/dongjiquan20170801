@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="#262232"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="23dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="25dp">
+
+        <FrameLayout
+            android:id="@+id/header_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_header_bg" />
+
+            <com.weiaibenpao.demo.chislim.map.customview.CircleImageView
+                android:id="@+id/header"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:border_color="@android:color/white"
+                app:border_width="2dp"
+                android:layout_gravity="center"
+                tools:src="@drawable/test" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/header_container"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="Avril" />
+
+        <com.weiaibenpao.demo.chislim.hurui.weight.DateTextView
+            android:id="@+id/post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nickname"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/header_container"
+            android:textColor="#cccccc"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_more" />
+
+
+    </RelativeLayout>
+
+
+    <com.ms.square.android.expandabletextview.ExpandableTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="40dp"
+        android:visibility="gone"
+        expandableTextView:animDuration="200"
+        expandableTextView:maxCollapsedLines="4">
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5sp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:text="今天成功突破30公里，加油！！！我的目标就是练就如图的体魄，加油！！！" />
+
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@android:color/transparent"
+            android:padding="10dp" />
+
+    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+
+    <com.zhy.view.flowlayout.FlowLayout
+        android:id="@+id/img_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="80dp"
+        android:paddingRight="40dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone">
+
+
+    </com.zhy.view.flowlayout.FlowLayout>
+
+    <FrameLayout
+        android:id="@+id/video_cover_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/video_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/scene" />
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_video_play" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/post_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="9dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="0.5sp"
+        android:maxLines="1"
+        android:textColor="#cccccc"
+        android:textSize="12sp"
+        tools:text="杭州市滨江区亚科中心A座3205室杭州市滨江区亚科中心A座3205室杭州市滨江区亚科中心A座3205室杭州市滨江区亚科中心A座3205室" />
+
+    <include
+        layout="@layout/layout_moment_footer"
+       />
+
+
+</LinearLayout>

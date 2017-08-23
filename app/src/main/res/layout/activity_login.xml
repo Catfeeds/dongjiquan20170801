@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bj"
+    tools:context="com.weiaibenpao.demo.chislim.ui.LoginActivity">
+
+   <ImageView
+       android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x56"
+        android:src="@mipmap/logo" />
+
+    <ImageView
+        android:id="@+id/myImageAnmi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/myOthers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/word1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="使用第三方账号登录"/>
+
+        <LinearLayout
+            android:layout_below="@+id/myOthers"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="loginByQq"
+                android:src="@mipmap/qq"
+                android:id="@+id/imageView4" />
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:onClick="loginByWxin"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/wechhat"/>
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:onClick="loginByWbo"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/weibo"
+                android:id="@+id/imageView3" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <EditText
+               android:id="@+id/userNumber"
+               android:background="@null"
+               android:layout_width="match_parent"
+               android:textSize="16sp"
+               android:layout_height="50dp"
+               android:inputType="phone"
+               android:maxLength="11"
+               android:textColor="@color/word1"
+               android:textColorHint="@color/word1"
+               android:hint="手机号"/>
+           <View
+               android:layout_below="@id/userNumber"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/word1"/>
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/userPass"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:layout_height="50dp"
+                android:textColor="@color/word1"
+                android:textColorHint="@color/word1"
+                android:inputType="textPassword"
+                android:hint="密码"/>
+            <View
+                android:layout_below="@id/userPass"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/word1"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/myLogin"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x44"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:alpha="1"
+            android:background="@drawable/userinfobutton"
+            android:textColor="@color/backWord"
+            android:text="登  录"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/findPasss"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/word1"
+                android:textSize="14sp"
+                android:text="忘记密码？"/>
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/registText"
+                android:text="注册账号"
+                android:textColor="@color/word1"
+                android:textSize="17sp"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

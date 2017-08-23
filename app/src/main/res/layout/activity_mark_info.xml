@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mark_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/newBack"
+    tools:context="com.weiaibenpao.demo.chislim.ui.MarkInfoActivity">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:id="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/newView">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back"/>
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="我的积分"
+                android:textColor="@color/newWord"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/guize"
+                android:textColor="@color/newWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="规则"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/credit_layout"
+            android:layout_below="@id/toplayout"
+            android:padding="7dp"
+            android:orientation="horizontal"
+            android:background="@color/backThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/mark"/>
+            <TextView
+                android:id="@+id/myMark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textSize="30sp"
+                android:textColor="@color/newBack"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="6500"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/newBack"
+                android:layout_gravity="center_vertical"
+                android:text="积分"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/getMark"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/backLine"
+                android:layout_gravity="center_vertical"
+                android:text="签到"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_below="@id/credit_layout"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/duihuan_layout"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:paddingTop="6dp"
+                android:background="@color/newView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/shop"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/backGround"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="好礼兑换"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/choujiangTv"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/backGround"
+                    android:layout_gravity="center_vertical"
+                    android:text="积分抽奖>"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/myLine"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="1dp"
+                android:background="@color/backThem"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/markRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

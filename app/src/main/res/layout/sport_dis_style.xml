@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weiaibenpao.demo.chislim.ui.SportStyleActivity">
+
+<RelativeLayout
+    android:id="@+id/activity_sport_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_bg">
+
+    <RelativeLayout
+        android:id="@+id/myTop"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blackbg">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_return"/>
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/word1"
+            android:text="区域选择"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/mySet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/word1"
+            android:padding="15dp"
+            android:text="城市"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/oldSport"
+        android:layout_below="@+id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--快速选择-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/traInfo"
+        android:layout_below="@+id/oldSport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+</ScrollView>

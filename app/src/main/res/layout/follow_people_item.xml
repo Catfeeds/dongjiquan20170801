@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x142"
+    android:layout_height="@dimen/y135"
+    android:background="@drawable/image_top_radiu_item"
+    android:layout_marginRight="@dimen/x11">
+    <com.weiaibenpao.demo.chislim.hurui.weight.RoundedImageView
+        android:id="@+id/mark_icon_iv_bg"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/x142"
+        android:layout_height="@dimen/y105" />
+    <LinearLayout
+        android:background="@drawable/image_top_radiu_item"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="@dimen/x142"
+        android:layout_height="@dimen/y105">
+        <ImageView
+            android:id="@+id/mark_icon_iv"
+            android:scaleType="fitXY"
+            android:layout_marginTop="17dp"
+            android:layout_width="@dimen/x62"
+            android:layout_height="@dimen/x62"
+            android:elevation="3dp"/>
+        <TextView
+            android:id="@+id/mark_icon_name"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:text="小葵"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/mark_icon_chainId"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="13sp"
+            android:text="【健身达人】"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/guanzhu_tv"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:text="关注"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/a_ro_corners"
+        android:layout_width="@dimen/x142"
+        android:layout_height="@dimen/y30" />
+</RelativeLayout>

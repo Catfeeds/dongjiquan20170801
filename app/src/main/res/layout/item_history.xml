@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="1dp"
+    android:id="@+id/click_layout"
+    android:background="@color/newView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/myDis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/newWord"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="0公里"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/myMonth"
+            android:textColor="@color/newWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016.12.17"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/myTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/newWord"
+            android:text="3小时"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/myCor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/newWord"
+            android:text="18大卡"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

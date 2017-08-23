@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pull="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newBack"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.weiaibenpao.demo.chislim.ui.ThemeActivity">
+
+
+
+
+    <ScrollView
+        android:layout_below="@id/myBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/zoom_layout"
+                android:background="@color/newView"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:orientation="vertical"
+
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/equity_speed"
+                       android:textSize="24sp"
+                       android:textStyle="bold"
+                       android:layout_gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="5'14"/>
+                   <TextView
+                       android:layout_gravity="center"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="wrap_content"
+                       android:gravity="center"
+                       android:layout_height="wrap_content"
+                       android:text="平均配速"/>
+
+               </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/fast_speed"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6'14"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="最快配速"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/lower_speed"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3'14"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="最慢配速"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:id="@+id/title_layout"
+                android:layout_below="@id/zoom_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:text="公里"
+                    android:textSize="16sp"
+                    android:layout_width="0dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center"
+                    android:text="配速"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center"
+                    android:text="用时"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/SpeedRecyclerView"
+                android:layout_below="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+    </ScrollView>
+
+    <!--<RelativeLayout
+        android:id="@+id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
+       &lt;!&ndash; <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="运动配速"/>&ndash;&gt;
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/newWord"
+            android:text="运动配速"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/myBar"
+        android:layout_below="@id/myTop"
+        android:layout_width="match_parent"
+        android:background="@color/backThem"
+        android:layout_height="1dp"
+        android:layout_gravity="center"/>-->
+    <RelativeLayout
+        android:id="@+id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newView">
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/newWord"
+            android:text="运动配速"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/myBar"
+        android:layout_below="@+id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backThem"/>
+</RelativeLayout>

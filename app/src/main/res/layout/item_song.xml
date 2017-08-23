@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_song"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/serial_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/serial_num"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        tools:text="It kon′t mean a thing" />
+
+    <TextView
+        android:id="@+id/singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/song"
+        android:layout_below="@+id/song"
+        android:lineSpacingExtra="6sp"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        tools:text="Cleo Laine" />
+
+    <ImageView
+        android:id="@+id/switch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="28dp"
+        android:padding="5dp"
+        android:src="@drawable/selector_switch_btn" />
+
+    <View
+        style="@style/Line_Horizontal_Small"
+        android:layout_below="@+id/singer"
+        android:layout_marginTop="15dp" />
+
+
+</RelativeLayout>

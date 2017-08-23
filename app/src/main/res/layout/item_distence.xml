@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+    <ImageView
+        android:id="@+id/myBackground"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="#333"
+        android:alpha="0.5"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/rember"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/currentCity"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@color/word1"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:text="杭州"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/word1"
+                    android:text="完成度："/>
+                <TextView
+                    android:id="@+id/completeNum"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/word1"
+                    android:layout_height="wrap_content"
+                    android:text="30%"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/word1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总里程："/>
+                <TextView
+                    android:id="@+id/allDistance"
+                    android:textColor="@color/word1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="500"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/word1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Km"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:text="当前运动里程："
+                    android:textStyle="bold"
+                    android:textColor="@color/word1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/currentDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textColor="@color/word1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/word1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Km"/>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/word1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上次运动时间："/>
+                <TextView
+                    android:id="@+id/former_timer"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/word1"
+                    android:layout_height="wrap_content"
+                    android:text="2017-12-13"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

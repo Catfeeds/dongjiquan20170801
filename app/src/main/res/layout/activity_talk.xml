@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_talk1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newBack">
+
+
+    <com.cjj.MaterialRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh"
+        app:overlay="true"
+        app:wave_show="true"
+        app:wave_color="#90ffffff"
+        app:progress_colors="@array/material_colors"
+        app:wave_height_type="higher"
+        >
+
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.weiaibenpao.demo.chislim.ui.TalkActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:id="@+id/activity_talk"
+    android:background="@color/newBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/myTalkLayout"
+        android:layout_marginTop="10dp"
+        android:background="@color/newView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/myImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/myTitle"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/backWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="话题"/>
+
+            <TextView
+                android:id="@+id/mtText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/backWord"
+                android:text="我和品牌的故事" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/myTalkNow"
+        android:layout_below="@+id/myTalkLayout"
+        android:layout_marginTop="10dp"
+        android:background="@color/newView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/newWord"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="近 期 话 题 精 选"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/talkMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/myTalkNow"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/newView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/newWord"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="更 多 热 门 话 题"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/talkMessageMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>
+    </com.cjj.MaterialRefreshLayout>
+</RelativeLayout>

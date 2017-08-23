@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hmuisc_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.weiaibenpao.demo.chislim.hurui.activity.HMuiscListActivity">
+
+    <FrameLayout
+        android:id="@+id/head_layout1"
+        android:background="@color/backGround"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/topImg"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:scaleType="fitXY"
+             />
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/ic_disk"
+            android:layout_gravity="center"
+
+            />
+
+        <com.weiaibenpao.demo.chislim.map.customview.CircleImageView
+            android:id="@+id/titleImg"
+            android:layout_width="107dp"
+            android:layout_height="107dp"
+            android:layout_gravity="center"
+             />
+
+        <TextView
+            android:id="@+id/musicType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:text="欧美"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/ic_white_back"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/total_songs"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#555555"
+        android:textSize="15sp"
+        tools:text="10首" />
+    <View
+      style="@style/Line_Horizontal_Small"
+        android:layout_below="@+id/singer"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/localMusicListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sport_music" />
+</LinearLayout>

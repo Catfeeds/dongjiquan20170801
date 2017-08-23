@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="1dp"
+    android:orientation="horizontal"
+    android:background="@color/newView"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:textColor="@color/newWord"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/kiloTv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="1"/>
+    <TextView
+        android:textColor="@color/newWord"
+        android:layout_gravity="center"
+        android:id="@+id/spdTv"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="4'15‘’"/>
+</LinearLayout>
+

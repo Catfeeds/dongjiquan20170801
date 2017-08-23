@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newBack"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+    android:layout_marginTop="30dp"
+    android:layout_below="@id/myTop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/go"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="当前的选择城市："
+        android:textSize="20sp"/>
+</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/myTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/newWord"
+            android:text="自定义区域跑"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/submitTv"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationY="12dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:text="开始"/>
+        <View
+            android:id="@+id/myLine"
+            android:layout_below="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backThem"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+    <Button
+        android:id="@+id/select_city"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="城市选择"
+        android:background="@drawable/carinfobutton"/>
+    </LinearLayout>
+</RelativeLayout>

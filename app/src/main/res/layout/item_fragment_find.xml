@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/myImage"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="90dp" />
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/myTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="柏林赛道梦游记"/>
+        <TextView
+            android:id="@+id/myText"
+            android:layout_below="@id/myTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:text="2016年柏林马拉松赛，柏林马拉松赛"/>
+        <TextView
+            android:id="@+id/myType"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="#aaa"
+            android:text="跑步故事"/>
+    </RelativeLayout>
+
+</LinearLayout>
