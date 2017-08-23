@@ -298,6 +298,7 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
     public void userSet() {
         Intent intent = new Intent(context, SetActivity.class);
         startActivity(intent);
+
     }
 
     /**
