@@ -105,7 +105,6 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
         }
 
 
-
         return view;
     }
 
@@ -123,7 +122,7 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
 
         mCache = ACache.get(context);    //实例化缓存
 //        WriteReadSharedPrefs.readUser(context,user);
-        Log.e("wlx", "onResume: "+user.toString() );
+        Log.e("wlx", "onResume: " + user.toString());
 
         getUserInfo();
         showUserInfo();
@@ -160,7 +159,6 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
 
         userName.setText(UserBean.getUserBean().userName);
     }
-
 
 
     @Override
@@ -239,15 +237,11 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
             case R.id.userIcon:
                 goUserInfo();
                 break;
-/*            case userName:
-                goUserInfo();
-                break;*/
+
             case R.id.set_layout:
                 userSet();
                 break;
-          /*  case R.id.updateUser:
-                goUserInfo();
-                break;*/
+
             case R.id.heighData:
                 goUserInfo();
                 break;
@@ -318,15 +312,15 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
             public void onResponse(Call<FansBean> call, Response<FansBean> response) {
                 if (response.isSuccessful()) {
                     FansBean result = response.body();
-                    Log.e("UserFragment","json result :"+new Gson().toJson(result));
+                    Log.e("UserFragment", "json result :" + new Gson().toJson(result));
                     if (result.getCode() == 0) {
                         updateView(result);
 
                     } else {
 
                     }
-                }else {
-                    Log.e("UserFragment","getFans response failed ");
+                } else {
+                    Log.e("UserFragment", "getFans response failed ");
                 }
             }
 
@@ -339,40 +333,42 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
 
     //修改界面
     public void updateView(FansBean result) {
-        if (result.getData()==null) {
-           return;
+        if (result.getData() == null) {
+            return;
         }
 
         //跑步的公里数
         dis = result.getData().getCountSport();
         double countSport = result.getData().getCountSport();
-        runDistance.setText("已跑里程：" + getDouble(countSport)+"km");
+        runDistance.setText("已跑里程：" + getDouble(countSport) + "km");
         careId.setText(result.getData().getCares() + "");
         funsId.setText(result.getData().getFanscount() + "");
         dynamicsId.setText(result.getData().getTotalHumor() + "");
 
         //设置等级
-        if (dis!=0){
+        if (dis != 0) {
             setLevel(dis);
-        }else{
-            para.width=0;
+        } else {
+            para.width = 0;
             gradeProgress.setLayoutParams(para);
         }
 
 //        mCache.put("alldis",String.valueOf(dis));
-        SharedPrefsUtil.putValue(getActivity(),WriteReadSharedPrefs.PREFS_NAME,WriteReadSharedPrefs.TOTAL_DISTANCE,String.valueOf(dis));
+        SharedPrefsUtil.putValue(getActivity(), WriteReadSharedPrefs.PREFS_NAME, WriteReadSharedPrefs.TOTAL_DISTANCE, String.valueOf(dis));
 
         //计算用户的跑步等级
 
-    }/**
-     */
-     private String getDouble(double num){
-         DecimalFormat   df   = new DecimalFormat("#0.00");
-         return df.format(num);
-     }
+    }
+
     /**
-     *
-     * @param distance  当前里程
+     */
+    private String getDouble(double num) {
+        DecimalFormat df = new DecimalFormat("#0.00");
+        return df.format(num);
+    }
+
+    /**
+     * @param distance 当前里程
      */
     private void setLevel(double distance) {
         //得到等级
@@ -380,45 +376,43 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
         //里程差
         double distance1 = getDistance(level, distance);
 
-      //计算进度条
-        setProgress(level,distance);
+        //计算进度条
+        setProgress(level, distance);
 
-        Log.e("cc2222", "setLevel: "+getDouble(distance1) );
-            gradePlan.setText("还差"+getDouble(distance1)+"km->Lv"+((int)level+1));
+        Log.e("cc2222", "setLevel: " + getDouble(distance1));
+        gradePlan.setText("还差" + getDouble(distance1) + "km->Lv" + ((int) level + 1));
 
 
     }
 
     /**
-     *  计算进度条
+     * 计算进度条
+     *
      * @param level
      * @param distance
      */
-    private void setProgress(double level,double distance) {
-        double with= gradeProgressd.getWidth()/3.0;
-        if (level==0){
-            para.width= (int) ((distance/50)*with);
+    private void setProgress(double level, double distance) {
+        double with = gradeProgressd.getWidth() / 3.0;
+        if (level == 0) {
+            para.width = (int) ((distance / 50) * with);
             gradePlan.setLayoutParams(para);
-        }
-        else if (level<4){
-            para.width= (int) ((distance- Math.pow(2,(level-1))*50)*with/((Math.pow(2,level)-Math.pow(2,(level-1)))*50)+level*with);
-            Log.e("wlx20333", "1:=== "+((distance- Math.pow(2,(level-1))*50) ));
+        } else if (level < 4) {
+            para.width = (int) ((distance - Math.pow(2, (level - 1)) * 50) * with / ((Math.pow(2, level) - Math.pow(2, (level - 1))) * 50) + level * with);
+            Log.e("wlx20333", "1:=== " + ((distance - Math.pow(2, (level - 1)) * 50)));
             Log.e("wlx20202", "2:==== ");
 
 
             gradeProgress.setLayoutParams(para);
-        }
-        else if (level>3&& level<7){
-            para.width= (int) ((distance- Math.pow(2,(level-1))*50)/(Math.pow(2,level)*50-Math.pow(2,(level-1)))*with+(level-4)*with);
+        } else if (level > 3 && level < 7) {
+            para.width = (int) ((distance - Math.pow(2, (level - 1)) * 50) / (Math.pow(2, level) * 50 - Math.pow(2, (level - 1))) * with + (level - 4) * with);
             gradeProgress.setLayoutParams(para);
         }
 
     }
 
 
-
     //计算距离差
-    private double getDistance(double level,double  runDistance){
+    private double getDistance(double level, double runDistance) {
 
         double pow = Math.pow(2, level);
         double v = pow * 50 - runDistance;
@@ -427,53 +421,51 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
     //计算等级
 
     private double getLevel(double input) {
-        Log.e("getLevel","input is "+input);
+        Log.e("getLevel", "input is " + input);
         double y = input / 50;
-        if(y <= 0){
-           return  0 ;
+        if (y <= 0) {
+            return 0;
         }
         double divisor = Math.log(y);
         double dividend = Math.log(2);
-        double quotient  = divisor/dividend;
-        double  result =  Math.floor(quotient)+1;
+        double quotient = divisor / dividend;
+        double result = Math.floor(quotient) + 1;
 //        Log.e("getLevel","y is "+y+"\ndivisor is "+divisor+"\ndividend is "+dividend+"\nquotient is "+quotient+"\nresult  is "+result);
-        if(result <=0 ){
-            return  0 ;
+        if (result <= 0) {
+            return 0;
         }
-        Log.e("getLevel","result is "+result);
+        Log.e("getLevel", "result is " + result);
 
         return result;
     }
 
 
     /**
-     *
-     *  0查看自己关注的用户
-     *  1查看自己的粉丝
+     * 0查看自己关注的用户
+     * 1查看自己的粉丝
      *
      * @param type
      */
-    public void intentFuns(int type){
-        Intent intent = new Intent(context,Li_FunsActivity.class);
-        intent.putExtra(Li_FunsActivity.FANS,type);
+    public void intentFuns(int type) {
+        Intent intent = new Intent(context, Li_FunsActivity.class);
+        intent.putExtra(Li_FunsActivity.FANS, type);
         startActivity(intent);
     }
-
 
 
     /**
      * 查看自己的动态
      */
-    public void intentQzone(){
-        Intent intent = new Intent(context,UserDetailActivity.class);
-        intent.putExtra(UserDetailActivity.USER_ID,user.userId);
+    public void intentQzone() {
+        Intent intent = new Intent(context, UserDetailActivity.class);
+        intent.putExtra(UserDetailActivity.USER_ID, user.userId);
         startActivity(intent);
 
     }
 
     OnGetPro mListener;
 
-//    @Subscribe
+    //    @Subscribe
 //    public void onMessageEvent(Boolean flag) {
 //        if (flag==true){
 //            showUserInfo();
